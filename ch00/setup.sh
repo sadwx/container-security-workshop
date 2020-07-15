@@ -56,11 +56,11 @@ echo 'opa Done.'
 sudo apt-get install -y jq mysql-client
 echo 'jq, mysql-client Done.'
 
-sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
-sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
-sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
+#sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
+#sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
+#sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 
-git clone https://github.com/ahmetb/kubectx.git ~/.kubectx
+#git clone https://github.com/ahmetb/kubectx.git ~/.kubectx
 COMPDIR=$(pkg-config --variable=completionsdir bash-completion)
 sudo ln -sf ~/.kubectx/completion/kubens.bash $COMPDIR/kubens
 sudo ln -sf ~/.kubectx/completion/kubectx.bash $COMPDIR/kubectx
@@ -72,7 +72,7 @@ export PATH=~/.kubectx:\$PATH
 FOE
 echo "kubectx Done. "
 
-git clone https://github.com/jonmosco/kube-ps1.git ~/.kube-ps1
+#git clone https://github.com/jonmosco/kube-ps1.git ~/.kube-ps1
 
 cat << FOE >> ~/.bashrc
 
